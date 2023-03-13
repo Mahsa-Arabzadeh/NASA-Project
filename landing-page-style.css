@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Titillium-regular;
+    src: url('/Fonts/TitilliumWeb-Regular.ttf');
+}
+*{
+    text-decoration: none;
+    font-family:Titillium-regular ;
+    color: white;
+}
+body{ 
+    background-color: black;
+}
+.asle{
+    margin: 0 auto;
+    width: 1300px;
+}
+.itme-card{
+    width: 50%;
+}
+.itme-card1{
+    width: 12.5%;
+    height: 50%;
+}
+.asle *{
+    display: flex;
+    margin-left: 4px;
+}
