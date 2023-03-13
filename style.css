@@ -1,16 +1,25 @@
+@font-face {
+  font-family: Titillium-regular;
+  src: url('Fonts/TitilliumWeb-Regular.ttf');
+}
+*{
+  text-decoration: none;
+  font-family:Titillium-regular ;
+}
+body{
+  background-color: black;
+}
 .container{
   margin: 0 auto;
-  width: 1680px;
+  width: 1700px;
 }
-
 .header{
   background-color: #000000;
   position: sticky;
   top: 0;
   height: 202px;
-  background-image: url("blacksky.jpg");
+  background-image: url("images-svg/blacksky.jpg");
 }
-
 .header img{
   margin: 0px 50px;
 }
@@ -22,11 +31,9 @@
 .navigation-bar * {
   vertical-align: middle;
 }
-
 .nav-bar{
   display: inline-block;
 }
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -56,7 +63,6 @@
   width: 300px;
   padding: 8px 7px;
 }
-
 .dropdown a {
   text-decoration: none;
   color: white;
@@ -68,7 +74,6 @@
 .dropdown:hover{
   background-color: hsl(212, 100%, 25%);
 }
-
 .dropdown-content a:hover{
   background-color:hsl(216, 51%, 21%);
   display: block;
@@ -82,11 +87,9 @@
   width: 150px;
   margin: 0px 20px;
 }
-
 .search-box * {
   vertical-align: middle;
 }
-
 .search-box input{
   background-color: rgb(66, 66, 66);
   outline: none;
