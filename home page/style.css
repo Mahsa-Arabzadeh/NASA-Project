@@ -1,0 +1,225 @@
+/* header code */
+body{
+    margin: 0px;
+    background-color: black;
+}
+
+
+
+@font-face {
+    font-family: Titillium-regular;
+    src: url('fonts/TitilliumWeb-Regular.ttf');
+}
+
+
+
+*{
+    text-decoration: none;
+    font-family:Titillium-regular ;
+}
+
+
+
+
+#container{
+    margin: 0 auto;
+    width: 1400px;
+}
+
+
+
+#header{
+    position: sticky;
+    top: 0;
+    height: 140px;
+    background-image: url("Imges/blacksky.jpg");
+}
+
+
+
+#nasa-logo img{
+    width: 130px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+
+
+#navigation-bar {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 140px;
+}
+
+
+
+
+#nav-bar {
+    display: inline-block;
+}
+
+
+
+.nasa-main-menu{
+    padding: 0px;
+    margin: 0px;  
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+    font-size: 23px;
+}
+
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+
+.dropdown-toggle {
+    display: inline-block;
+    padding: 25px 0px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+.dropdown-menu{
+    list-style-type: none;
+    padding: 0;
+    display: none;
+    position: absolute;
+    left: 0px;
+    background-color: hsl(226, 84%, 30%);
+    min-width: 160px;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.368);
+    z-index: 1;
+    font-size: 19px;
+    /* width: 310px; */
+}
+
+
+
+.dropdown-menu > li > a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 300px;
+    padding: 8px 7px;
+}
+
+
+.nasa-main-menu:hover  .dropdown-menu {
+    display: block;
+}
+
+
+
+.nasa-main-menu :hover{
+    background-color:  hsl(226, 84%, 30%);
+}
+
+
+
+.nasa-main-menu > li > a > span {
+    border-right: 2px solid rgb(107, 107, 107);
+    padding: 10px 15px;
+}
+
+
+
+.nasa-main-menu > li > ul  > li > a:hover {
+    background-color: #152a4e;
+    display: block;
+    width: 95%;
+}
+
+
+#search-box-main {
+    display: inline-block;
+}
+
+
+#search-box {
+    display: inline-block;
+    background-color: rgb(45, 45, 45);
+    padding: 8px 5px;
+    width: 160px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+
+
+#search-box * {
+    vertical-align: middle;
+}
+
+
+
+#search-box input{
+    background-color:  rgb(45, 45, 45);
+    outline: none;
+    border: none;
+    width: 67%;
+    font-size: 16px;
+    color: white;
+}
+ 
+
+
+#search-box svg{
+    fill: white;
+    width: 27px;
+    margin-left: 17px;
+}
+
+
+
+#search-box-main img {
+    width: 22px;
+}
+
+
+
+#navigation-bottom {
+    position: relative;
+    float: right;
+    margin-right: 360px;
+    width: 1069px;
+    /* height: 60px; */
+}
+
+
+
+#navigation-bottom > ul {
+    background-color: #484848;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+#navigation-bottom > ul > li{
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+    padding: 8px 0px;
+}
+
+
+
+#navigation-bottom > ul  :hover {
+    background-color: #686868;
+}
+
+
+
+#navigation-bottom > ul > li > a {
+    color: white;
+    padding: 0px 10px;
+    font-size: 17px;
+}
+/* end header code  */
