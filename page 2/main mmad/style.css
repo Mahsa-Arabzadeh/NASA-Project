@@ -56,11 +56,9 @@ body{
 }
 /* end code p */
 /* code img  */
-#content img{
+#content img:nth-of-type(2),img:nth-of-type(3),img:nth-of-type(4){
     margin: 20px;
     display: block;
-}
-#content img{
     width: 980px;
 }
 /* end code img */
