@@ -1,95 +1,85 @@
-/* header code */
+/* remove default margin and add a bachground */
 body{
     margin: 0px;
     background-color: black;
 }
 
-
-
+/* add a font for all of texts and links*/
 @font-face {
     font-family: Titillium-regular;
     src: url('fonts/TitilliumWeb-Regular.ttf');
 }
 
-
-
+/* remove text decotation for all of links */
 *{
     text-decoration: none;
     font-family:Titillium-regular ;
 }
 
-
-
-
+/* add a width to container and We get it in the middle of page */
 #container{
     margin: 0 auto;
+    max-width: 1200px;
     width: 1400px;
+
 }
 
-
-
+/* Header of home page (Creator Mahsa) [START]
+add a position sticky and a background image for header */
 #header{
     position: sticky;
     top: 0;
+    width: 100%;
     height: 140px;
     background-image: url("Imges/blacksky.jpg");
 }
 
-
-
-#nasa-logo img{
-    width: 112px;
+/* add a relative position to nasa logo  */
+#nasa-logo {
+    display: inline-block;
     position: relative;
-    left: 30px;
-    bottom: 100px;
+    bottom: 110px;
+    right: 50px;
 }
 
+/* add a width to nasa logo image */
+#nasa-logo img{
+    width: 120px;
+}
 
-
+/* change display to inline block and add a position */
 #navigation-bar {
     display: inline-block;
-    vertical-align: middle;
-    margin-right: 140px;
+    position: relative;
+    left: 250px;
 }
 
-
-
-
+/* change display to inline block */
 #nav-bar {
     display: inline-block;
 }
 
-
-
-#nav-bar{
-    position: relative;
-    left: 320px;
-}
-
-
-
-#nav-bar *{
-    font-size: 20px;
-}
-
-
-
+/* remove padding and margin and add a position and
+ change display to inline block 
+and also hide list style type */
 .nasa-main-menu{
     padding: 0px;
     margin: 0px;  
     position: relative;
     display: inline-block;
     list-style-type: none;
-    font-size: 23px;
+    font-size: 22px;
 }
 
-
+/* change display to inline block */
 .dropdown {
     display: inline-block;
     position: relative;
 }
 
-
+/* change display to inline block
+some padding 
+add a color to links and hide text decoration */
 .dropdown-toggle {
     display: inline-block;
     padding: 25px 0px;
@@ -97,9 +87,10 @@ body{
     text-decoration: none;
 }
 
-
-
-
+/* hide list style type and remove padding 
+remove display and add position absolute 
+increase font size to 19px 
+add a box shadow */
 .dropdown-menu{
     list-style-type: none;
     padding: 0;
@@ -114,8 +105,7 @@ body{
     /* width: 310px; */
 }
 
-
-
+/* add some padding , color , width and hide text decoration */
 .dropdown-menu > li > a {
     text-decoration: none;
     color: white;
@@ -124,67 +114,50 @@ body{
     padding: 8px 7px;
 }
 
-
+/* when mouse on it , .dropdown-menu will be apear */
 .nasa-main-menu:hover  .dropdown-menu {
     display: block;
 }
 
-
-
+/* when mouse on it , backgroud color will be blue  */
 .nasa-main-menu :hover{
     background-color:  hsl(226, 84%, 30%);
 }
 
-
-
+/* add a border right to spans and some padding  */
 .nasa-main-menu > li > a > span {
     border-right: 2px solid rgb(107, 107, 107);
-    padding: 10px 15px;
+    padding: 10px 12px;
 }
 
-
-
+/* when mouse on it , links will be blue  */
 .nasa-main-menu > li > ul  > li > a:hover {
     background-color: #152a4e;
-    display: block;
-    width: 95%;
 }
 
-
-
+/* change display to inline block */
 #search-box-main {
     display: inline-block;
 }
 
-
-
-#search-box-main img{
-    position: relative;
-    left: 275px;
-    top: 4px;
-}
-
-
-
+/* change display to inline block and add a background color 
+some padding , width and margin right  */
 #search-box {
     display: inline-block;
     background-color: rgb(45, 45, 45);
     padding: 7px 4px;
-    width: 150px;
-    margin-left: 30px;
+    width: 160px;
     margin-right: 10px;
-    position: relative;
-    left: 285px;
 }
 
-
-
+/* everything in search box will get vertical align middle */
 #search-box * {
     vertical-align: middle;
 }
 
-
-
+/* add a background color and hide outline , border 
+increase font size to 14px
+add a color white */
 #search-box input{
     background-color:  rgb(45, 45, 45);
     outline: none;
@@ -194,41 +167,38 @@ body{
     color: white;
 }
  
-
-
+/* add a color to svg , width and margin left */
 #search-box svg{
     fill: white;
     width: 23px;
     margin-left: 17px;
 }
 
-
-
+/* add a width to share image */
 #search-box-main img {
     width: 22px;
 }
 
-
-
+/* add a position and width to navigation bottom */
 #navigation-bottom {
     position: relative;
-    margin-right: 360px;
-    width: 942px;
-    position: relative;
-    left: 240px;
+    left: 120px;
+    width: 1000px;
 }
 
-
-
+/* add a position to ul of navigation bottom and background color 
+fix width to 100% , remove paddig and margin */
 #navigation-bottom > ul {
+    position: relative;
     background-color: #484848;
+    width: 100%;
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    text-align: center;
 }
 
-
-
+/* add a position to li and change display to inline block 
+hide list style type , some padding  */
 #navigation-bottom > ul > li{
     position: relative;
     display: inline-block;
@@ -236,17 +206,17 @@ body{
     padding: 8px 0px;
 }
 
-
-
+/* when mouse on it , ul will have background color grey */
 #navigation-bottom > ul  :hover {
     background-color: #686868;
 }
 
-
-
+/* add a color to links and some padding
+increase font size to 15px */
 #navigation-bottom > ul > li > a {
     color: white;
-    margin: 0px 10px;
-    font-size: 14px;
+    padding: 0px 10px;
+    font-size: 15px;
 }
-/* end header code  */
+
+/* Codes of Header (Creator Mahsa) [END] */
