@@ -1,4 +1,6 @@
-#footer{
+/* code footer */
+
+footer{
     padding: 50px;
     background-color: black;
     position: absolute;
@@ -7,18 +9,16 @@
     left: 0;
 }
  
-
+/* code of footer info */
 #footer-info{
     margin-left: 35px;
     margin-top: -15px;
 }
 
-
 #footer-info img{
     float: left;
     width: 80px;
 }
-
 
 #footer-info span{
     font-weight: 600;
@@ -28,7 +28,8 @@
     color: white;
 }
 
-
+/* end code footer info */
+/* code footer links */
 #footer-links{
     float: right;
     margin-top: 26px;
@@ -44,3 +45,5 @@
     font-size: 13px;
     font-weight: bold;
 }
+/* end footer links */
+/* end code footer */
