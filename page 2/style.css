@@ -5,12 +5,242 @@
 *{
     font-family:TitilliumWeb ;
 }
-/* code contenar */
-#contenar{
-    margin: 0 auto;
-    width: 1400px;
+
+
+/* remove default margin and add a bachground */
+body{
+    margin: 0px;
+    background-color: black;
 }
-/* end code contenar */
+
+/* add a font for all of texts and links*/
+@font-face {
+    font-family: Titillium-regular;
+    src: url('fonts/TitilliumWeb-Regular.ttf');
+}
+
+/* remove text decotation for all of links */
+*{
+    text-decoration: none;
+    font-family:Titillium-regular ;
+}
+
+/* add a width to container and We get it in the middle of page */
+#container{
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 1400px;
+
+}
+
+/* Header of home page (Creator Mahsa) [START]
+add a position sticky and a background image for header */
+#header{
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url("Imges/blacksky.jpg");
+}
+
+/* add a relative position to nasa logo  */
+#nasa-logo {
+    display: inline-block;
+    position: relative;
+    right: 1100px;
+    top: 10px;
+}
+
+/* add a width to nasa logo image */
+#nasa-logo img{
+    width: 100px;
+}
+
+/* change display to inline block and add a position */
+#navigation-bar {
+    display: inline-block;
+    position: relative;
+    left: 250px;
+}
+
+/* change display to inline block */
+#nav-bar {
+    display: inline-block;
+}
+
+/* remove padding and margin and add a position and
+ change display to inline block 
+and also hide list style type */
+.nasa-main-menu{
+    padding: 0px;
+    margin: 0px;  
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+    font-size: 22px;
+}
+
+/* change display to inline block */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+/* change display to inline block
+some padding 
+add a color to links and hide text decoration */
+.dropdown-toggle {
+    display: inline-block;
+    padding: 25px 0px;
+    color: white;
+    text-decoration: none;
+    border-right: 2px solid rgb(107, 107, 107);
+}
+
+.dropdown-toggle1 {
+    display: inline-block;
+    padding: 25px 0px;
+    color: white;
+    text-decoration: none;
+}
+
+/* hide list style type and remove padding 
+remove display and add position absolute 
+increase font size to 19px 
+add a box shadow */
+.dropdown-menu{
+    list-style-type: none;
+    padding: 0;
+    display: none;
+    position: absolute;
+    left: 0px;
+    background-color: hsl(226, 84%, 30%);
+    min-width: 160px;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.368);
+    z-index: 1;
+    font-size: 19px;
+    /* width: 310px; */
+}
+
+/* add some padding , color , width and hide text decoration */
+.dropdown-menu > li > a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 300px;
+    padding: 8px 7px;
+}
+
+/* when mouse on it , .dropdown-menu will be apear */
+.nasa-main-menu:hover  .dropdown-menu {
+    display: block;
+}
+
+/* when mouse on it , backgroud color will be blue  */
+.nasa-main-menu :hover{
+    background-color:  hsl(226, 84%, 30%);
+}
+
+/* add a border right to spans and some padding  */
+.nasa-main-menu > li > a > span {
+    padding: 10px 12px;
+}
+
+/* when mouse on it , links will be blue  */
+.nasa-main-menu > li > ul  > li > a:hover {
+    background-color: #152a4e;
+}
+
+/* change display to inline block */
+#search-box-main {
+    display: inline-block;
+}
+
+/* change display to inline block and add a background color 
+some padding , width and margin right  */
+#search-box {
+    display: inline-block;
+    background-color: rgb(45, 45, 45);
+    padding: 7px 4px;
+    width: 160px;
+    margin-right: 10px;
+}
+
+/* everything in search box will get vertical align middle */
+#search-box * {
+    vertical-align: middle;
+}
+
+/* add a background color and hide outline , border 
+increase font size to 14px
+add a color white */
+#search-box input{
+    background-color:  rgb(45, 45, 45);
+    outline: none;
+    border: none;
+    width: 67%;
+    font-size: 14px;
+    color: white;
+}
+ 
+/* add a color to svg , width and margin left */
+#search-box svg{
+    fill: white;
+    width: 23px;
+    margin-left: 17px;
+}
+
+/* add a width to share image */
+#search-box-main img {
+    width: 22px;
+}
+
+/* add a position and width to navigation bottom */
+#navigation-bottom {
+    position: relative;
+    left: 120px;
+    width: 1000px;
+}
+
+/* add a position to ul of navigation bottom and background color 
+fix width to 100% , remove paddig and margin */
+#navigation-bottom > ul {
+    position: relative;
+    background-color: #484848;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* add a position to li and change display to inline block 
+hide list style type , some padding  */
+#navigation-bottom > ul > li{
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+    padding: 8px 0px;
+}
+
+/* when mouse on it , ul will have background color grey */
+#navigation-bottom > ul  :hover {
+    background-color: #686868;
+}
+
+/* add a color to links and some padding
+increase font size to 15px */
+#navigation-bottom > ul > li > a {
+    color: white;
+    padding: 0px 10px;
+    font-size: 15px;
+}
+
+/* Codes of Header (Creator Mahsa) [END] */
+
+
+
 /* code of said-bar */
 #said-bar{
     display: inline-block;
@@ -62,17 +292,12 @@
 }
 /* end code of said-bar */
 /* code main content */
-/* code of body */
-body{
-    background-color: black;
-}
-/* end code of body */
 /* code of main content */
 #content{
+    margin-left: 340px;
     background-color: white;
     width: 1035px;
     display: inline-block;
-    float: right;
 }
 #content * {
     font-size: 14px;
@@ -133,3 +358,52 @@ body{
 }
 /* end code main content h1 */
 /* end code of main content  */
+
+/* code footer */
+
+footer{
+    padding: 50px;
+    background-color: black;
+    position: relative;
+    bottom: 0;
+    height: 90px;
+}
+ 
+/* code of footer info */
+#footer-info{
+    margin-left: 35px;
+    margin-top: -15px;
+}
+
+#footer-info img{
+    float: left;
+    width: 80px;
+}
+
+#footer-info span{
+    font-weight: 600;
+    font-size: 0.85em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: white;
+}
+
+/* end code footer info */
+/* code footer links */
+#footer-links{
+    float: right;
+    margin-top: 26px;
+}
+
+
+#footer-links a{
+    color: #5d7fb9;
+    display: inline-block;
+    margin: 14px;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 13px;
+    font-weight: bold;
+}
+/* end footer links */
+/* end code footer */
