@@ -1,0 +1,494 @@
+/* remove default margin and add a bachground */
+body{
+    margin: 0px;
+    background-color: black;
+}
+
+/* add a font for all of texts and links*/
+@font-face {
+    font-family: Titillium-regular;
+    src: url('fonts/TitilliumWeb-Regular.ttf');
+}
+
+/* remove text decotation for all of links */
+*{
+    text-decoration: none;
+    font-family:Titillium-regular ;
+}
+
+/* add a width to container and We get it in the middle of page */
+#container{
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 1400px;
+
+}
+
+/* Header of home page (Creator Mahsa) [START]
+add a position sticky and a background image for header */
+#header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 140px;
+    background-image: url("Imges/blacksky.jpg");
+    z-index: 1;
+}
+
+/* add a relative position to nasa logo  */
+#nasa-logo {
+    display: inline-block;
+    position: relative;
+    bottom: 110px;
+    right: 50px;
+}
+
+/* add a width to nasa logo image */
+#nasa-logo img{
+    width: 120px;
+}
+
+/* change display to inline block and add a position */
+#navigation-bar {
+    display: inline-block;
+    position: relative;
+    left: 250px;
+}
+
+/* change display to inline block */
+#nav-bar {
+    display: inline-block;
+}
+
+/* remove padding and margin and add a position and
+ change display to inline block 
+and also hide list style type */
+.nasa-main-menu{
+    padding: 0px;
+    margin: 0px;  
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+    font-size: 22px;
+}
+
+/* change display to inline block */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+/* change display to inline block
+some padding 
+add a color to links and hide text decoration */
+.dropdown-toggle {
+    display: inline-block;
+    padding: 25px 0px;
+    color: white;
+    text-decoration: none;
+    border-right: 2px solid rgb(107, 107, 107);
+}
+
+.dropdown-toggle1 {
+    display: inline-block;
+    padding: 25px 0px;
+    color: white;
+    text-decoration: none;
+}
+
+/* hide list style type and remove padding 
+remove display and add position absolute 
+increase font size to 19px 
+add a box shadow */
+.dropdown-menu{
+    list-style-type: none;
+    padding: 0;
+    display: none;
+    position: absolute;
+    left: 0px;
+    background-color: hsl(226, 84%, 30%);
+    min-width: 160px;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.368);
+    z-index: 1;
+    font-size: 19px;
+    /* width: 310px; */
+}
+
+/* add some padding , color , width and hide text decoration */
+.dropdown-menu > li > a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 300px;
+    padding: 8px 7px;
+}
+
+/* when mouse on it , .dropdown-menu will be apear */
+.nasa-main-menu:hover  .dropdown-menu {
+    display: block;
+}
+
+/* when mouse on it , backgroud color will be blue  */
+.nasa-main-menu :hover{
+    background-color:  hsl(226, 84%, 30%);
+}
+
+/* add a border right to spans and some padding  */
+.nasa-main-menu > li > a > span {
+    padding: 10px 12px;
+}
+
+/* when mouse on it , links will be blue  */
+.nasa-main-menu > li > ul  > li > a:hover {
+    background-color: #152a4e;
+}
+
+/* change display to inline block */
+#search-box-main {
+    display: inline-block;
+}
+
+/* change display to inline block and add a background color 
+some padding , width and margin right  */
+#search-box {
+    display: inline-block;
+    background-color: rgb(45, 45, 45);
+    padding: 7px 4px;
+    width: 160px;
+    margin-right: 10px;
+}
+
+/* everything in search box will get vertical align middle */
+#search-box * {
+    vertical-align: middle;
+}
+
+/* add a background color and hide outline , border 
+increase font size to 14px
+add a color white */
+#search-box input{
+    background-color:  rgb(45, 45, 45);
+    outline: none;
+    border: none;
+    width: 67%;
+    font-size: 14px;
+    color: white;
+}
+ 
+/* add a color to svg , width and margin left */
+#search-box svg{
+    fill: white;
+    width: 23px;
+    margin-left: 17px;
+}
+
+/* add a width to share image */
+#search-box-main img {
+    width: 22px;
+}
+
+/* add a position and width to navigation bottom */
+#navigation-bottom {
+    position: relative;
+    left: 120px;
+    width: 1000px;
+}
+
+/* add a position to ul of navigation bottom and background color 
+fix width to 100% , remove paddig and margin */
+#navigation-bottom > ul {
+    position: relative;
+    background-color: #484848;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* add a position to li and change display to inline block 
+hide list style type , some padding  */
+#navigation-bottom > ul > li{
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+    padding: 8px 0px;
+}
+
+/* when mouse on it , ul will have background color grey */
+#navigation-bottom > ul  :hover {
+    background-color: #686868;
+}
+
+/* add a color to links and some padding
+increase font size to 15px */
+#navigation-bottom > ul > li > a {
+    color: white;
+    padding: 0px 10px;
+    font-size: 15px;
+}
+
+/* Codes of Header (Creator Mahsa) [END] */
+
+
+
+
+/* cod of main*/
+/* cod of main id */
+body{
+    background-color: black;
+}
+#main{
+    margin: 0 auto;
+    width: 1400px;
+}
+#main #MORE-STORIES a{
+    text-align: center;
+    padding: 10 603px;
+    background-color:#15418c ;
+    border: none;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+}
+#main #MORE-STORIES{
+    position: relative;
+    bottom: 1400px;
+}
+#main *{
+    margin: 1px;
+    display: inline-block;
+}
+/* end code of main id*/
+/* code of contener-header-main */
+#contener-header-main{
+    display: flex;
+}
+/* end cod of contener-header-main */
+#left-img-header-main span{
+text-decoration: none;
+font-size: 19px;
+color: black;
+position: relative;
+bottom: 33.5px;
+background: rgba(255, 255, 255, 0.8);
+padding:5px 536px 5px 11px ;
+}
+#left-img-header-main{
+    position: relative;
+    top: 1px;
+}
+#left-img-header-main img{
+    height: 653px;
+    width: 652.5;
+}
+/* code of Itm-card-header-of-main-right */
+#Itm-card-header-of-main-right img{
+    position: relative;
+    bottom: 336.7px;
+    left: 336px;
+}
+#Itm-card-header-of-main-right span{
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    position: relative;
+    bottom: 347px;
+    left: 14px;
+    background: rgba(255, 255, 255, 0.8);
+    padding:5px 204.8px 5px 10px ;
+}
+/* end code of Itm-card-header-of-main-right */
+/* code of Itm-card-header-of-main */
+.Itm-card-header-of-main{
+    display: inline-block;
+    box-sizing: border-box;
+}
+.Itm-card-header-of-main span{
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    position: relative;
+    bottom: 10px;
+    right: 322px;
+    background: rgba(255, 255, 255, 0.8);
+    padding:5px 204.7px 5px 10px ;
+}
+/* end code of Itm-card-header-of-main */
+/* code of footer-of-main */
+#Itm-card-header-main-footer{
+    margin: 1px;
+    margin-top: 3px;
+    position: relative;
+    bottom: 350px;
+}   
+#Itm-card-header-main-footer span{
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    position: relative;
+    bottom: 33.8px;
+    background: rgba(255, 255, 255, 0.8);
+    padding:5px 100.9px 5px 10px ;
+}
+#Itm-card-header-main-footer img{
+    width: 89.4%;
+}
+/* end code of footer-of-main */
+/* code of contener-main-main */
+/* code of right img */
+#contener-main-main{
+    position: relative;
+    bottom: 380px;
+}
+#contener-main-main div:last-of-type img{
+    width: 330px;
+    height: 320px;
+}
+#contener-main-main div:last-of-type span{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    position: relative;
+    bottom: 8.5px;
+    background: rgba(255, 255, 255, 0.8);
+    padding:5px 216px 5px 10px ;
+    right: 332px;
+}
+#contener-main-main div:last-of-type{
+    position: relative;
+    left: 984px;
+    bottom: 675px;
+}
+/* end code of right img */
+/* code of left img */
+#contener-main-main div:first-of-type span{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    position: relative;
+    bottom: 10px;
+    right: 321.4px;
+    background: rgba(255, 255, 255, 0.8);
+    padding:5px 204px 5px 10px ;
+}
+/* end code of left img */
+/* code of Center img */
+#Itm-Center-contener-main-main{
+    position: relative;
+    left: 330px;
+    bottom: 338px;
+}
+#Itm-Center-contener-main-main span{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    position: relative;
+    bottom: 9px;
+    right: 642px;
+    background: rgba(255, 255, 255, 0.8);
+    padding:5px 525px 5px 10px ;
+}
+/* end code of contener-main-main */
+/* end code of contener-main-main */
+/* code footer main itm */
+#itm-footer-main{
+    position: relative;
+    bottom: 1060px;
+}
+/* code of right-itm-footer-main */
+#right-itm-footer-main img{
+    width: 330px;
+    height: 320px;
+}
+#right-itm-footer-main span{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    position: relative;
+    bottom: 11.07px;
+    right: 332px;
+    background: rgba(255, 255, 255, 0.8);
+    padding:5px 215px 5px 10px ;
+}
+#right-itm-footer-main{
+    position: relative;
+    left: 334px;
+    bottom: 337px;
+}
+/* end code of 1right-itm-footer-main */
+/* code of itm-all-footer-main span */
+.itm-all-footer-main span{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    position: relative;
+    bottom: 11.07px;
+    right: 322px;
+    background: rgba(255, 255, 255, 0.8);
+    padding:5px 204px 5px 10px ;
+}
+/* end code of itm-all-footer-main span */
+/* code of itm-Center-footer-main */
+#itm-Center-footer-main{
+    position: relative;
+    left: 325px;
+    bottom: 337px;
+}
+/* end code of itm-Center-footer-main */
+/*end code footer main itm */
+/* end cod of main */
+
+/* code footer */
+
+footer{
+    padding: 50px;
+    background-color: black;
+    position: relative;
+    bottom: 1400;
+    right: 0;
+    left: 0;
+}
+ 
+/* code of footer info */
+#footer-info{
+    margin-left: 35px;
+    margin-top: -15px;
+}
+
+#footer-info img{
+    float: left;
+    width: 80px;
+}
+
+#footer-info span{
+    font-weight: 600;
+    font-size: 0.85em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: white;
+}
+
+/* end code footer info */
+/* code footer links */
+#footer-links{
+    float: right;
+    margin-top: 26px;
+}
+
+
+#footer-links a{
+    color: #5d7fb9;
+    display: inline-block;
+    margin: 14px;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 13px;
+    font-weight: bold;
+}
+/* end footer links */
+/* end code footer */
