@@ -139,7 +139,7 @@ add a box shadow */
 }
 
 /* when mouse on it , backgroud color will be blue  */
-.nasa-main-menu :hover{
+.dropdown:hover{
     background-color:  hsl(226, 84%, 30%);
 }
 
