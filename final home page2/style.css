@@ -1,0 +1,654 @@
+/* remove default margin and add a bachground */
+body{
+    margin: 0px;
+    background-color: black;
+}
+
+/* add a font for all of texts and links*/
+@font-face {
+    font-family: Titillium-regular;
+    src: url('fonts/TitilliumWeb-Regular.ttf');
+}
+
+/* remove text decotation for all of links */
+*{
+    text-decoration: none;
+    font-family:Titillium-regular ;
+}
+
+/* add a width to container and We get it in the middle of page */
+#container{
+    margin: 0 auto;
+    width: 1400px;
+
+}
+
+/* Header of home page (Creator Mahsa) [START]
+add a position sticky and a background image for header */
+#header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 140px;
+    background-image: url("Imges/blacksky.jpg");
+    z-index: 1;
+}
+
+/* add a relative position to nasa logo  */
+#nasa-logo {
+    display: inline-block;
+    position: relative;
+    bottom: 110px;
+    right: 50px;
+}
+
+/* add a width to nasa logo image */
+#nasa-logo img{
+    width: 120px;
+}
+
+/* change display to inline block and add a position */
+#navigation-bar {
+    display: inline-block;
+    position: relative;
+    left: 250px;
+}
+
+/* change display to inline block */
+#nav-bar {
+    display: inline-block;
+}
+
+/* remove padding and margin and add a position and
+ change display to inline block 
+and also hide list style type */
+.nasa-main-menu{
+    padding: 0px;
+    margin: 0px;  
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+    font-size: 22px;
+    background: transparent;
+}
+
+/* change display to inline block */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+/* change display to inline block
+some padding 
+add a color to links and hide text decoration */
+.dropdown-toggle {
+    display: inline-block;
+    padding: 25px 0px;
+    color: white;
+    text-decoration: none;
+    border-right: 2px solid rgb(107, 107, 107);
+}
+
+.dropdown-toggle1 {
+    display: inline-block;
+    padding: 25px 0px;
+    color: white;
+    text-decoration: none;
+}
+
+/* hide list style type and remove padding 
+remove display and add position absolute 
+increase font size to 19px 
+add a box shadow */
+.dropdown-menu{
+    list-style-type: none;
+    padding: 0;
+    display: none;
+    position: absolute;
+    left: 0px;
+    background-color:#15418c;
+    min-width: 160px;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.368);
+    z-index: 1;
+    font-size: 19px;
+}
+
+/* add some padding , color , width and hide text decoration */
+.dropdown-menu > li > a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 300px;
+    padding: 8px 7px;
+    position: relative;
+}
+
+/* when mouse on it , .dropdown-menu will be apear */
+.nasa-main-menu:hover  .dropdown-menu {
+    display: block;
+}
+
+/* when mouse on it , backgroud color will be blue  */
+.dropdown:hover {
+    background-color: #15418c;
+}
+
+/* add a border right to spans and some padding  */
+.nasa-main-menu > li > a > span {
+    padding: 10px 12px;
+}
+
+/* when mouse on it , links will be blue  */
+.nasa-main-menu > li > ul  > li > a:hover {
+    background-color: #152a4e;
+}
+
+/* change display to inline block */
+#search-box-main {
+    display: inline-block;
+}
+
+/* change display to inline block and add a background color 
+some padding , width and margin right  */
+#search-box {
+    display: inline-block;
+    background-color: rgb(45, 45, 45);
+    padding: 7px 4px;
+    width: 160px;
+    margin-right: 10px;
+}
+
+/* everything in search box will get vertical align middle */
+#search-box * {
+    vertical-align: middle;
+}
+
+/* add a background color and hide outline , border 
+increase font size to 14px
+add a color white */
+#search-box input{
+    background-color:  rgb(45, 45, 45);
+    outline: none;
+    border: none;
+    width: 67%;
+    font-size: 14px;
+    color: white;
+}
+ 
+/* add a color to svg , width and margin left */
+#search-box svg{
+    fill: white;
+    width: 23px;
+    margin-left: 17px;
+}
+
+/* add a width to share image */
+#search-box-main img {
+    width: 22px;
+}
+
+/* add a position and width to navigation bottom */
+#navigation-bottom {
+    position: relative;
+    left: 120px;
+    width: 1000px;
+}
+
+/* add a position to ul of navigation bottom and background color 
+fix width to 100% , remove paddig and margin */
+#navigation-bottom > ul {
+    position: relative;
+    background-color: #484848;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* add a position to li and change display to inline block 
+hide list style type , some padding  */
+#navigation-bottom > ul > li{
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+    padding: 8px 0px;
+}
+
+/* when mouse on it , ul will have background color grey */
+#navigation-bottom > ul  :hover {
+    background-color: #686868;
+}
+
+/* add a color to links and some padding
+increase font size to 15px */
+#navigation-bottom > ul > li > a {
+    color: white;
+    padding: 0px 10px;
+    font-size: 15px;
+}
+
+/* Codes of Header (Creator Mahsa) [END] */
+
+/* start main of home page [START] */
+#main {
+    width: 1366px;
+    margin: 0 auto;
+}
+/* add a position to content */
+#content {
+    position: relative;
+}
+/* add display grid to cards items and style it */
+#cards {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-auto-rows: minmax(315px, auto);
+    max-width: 1340px;
+    width: 100vw;
+    gap: 10px;
+}
+/* vertical class for style grid layout */
+.vertical{
+    grid-column: 1 / span 2;
+}
+/* vertical class for style grid layout */
+.vertical1 {
+    grid-column: auto / span 2;
+}
+/* horizonal class for style grid layout */
+.horizonal{
+    grid-row: 1 / span 2;
+}
+/* some style to main cards1 , add background image , position , width , ...  */
+.main-cards1 {
+    position: relative;
+    background-image: url(imges/Messier_55.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    width: 100%;
+    height: 640px;
+    overflow: visible;
+    max-width: 1320px;
+}
+/* add a margin top tp card 1  */
+.cards-1 {
+    margin-top: 510px;
+}
+/* add some style to span card 1  */
+.cards-1 span {
+    background-color: #39719ebd;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 20px;
+}
+/* add some style to h2 card 1  */
+.cards-1 h2 {
+    margin: 0px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.774);
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+}
+
+/* when mouse on it we can see some changes in style span  */
+.cards-1 span:hover {
+    background-color: #39719eee;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 20px;
+}
+/* when mouse on it we can see some changes in style h2  */
+.cards-1 h2:hover {
+    margin: 0px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.957);
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 30px;
+}
+/* add a margin top tp card 2  */
+.cards-2 {
+    margin-top: 178px;
+    position: relative;
+}
+/* add some style to span card 2  */
+.cards-2 span {
+    background-color: #39719ebd;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 20px;
+}
+/* add some style to h2 card 2  */
+.cards-2 h2 {
+    margin: 0px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.774);
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* when mouse on it we can see some changes in style span  */
+.cards-2 span:hover {
+    background-color: #39719eee;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 20px;
+}
+/* when mouse on it we can see some changes in style h2  */
+.cards-2 h2:hover {
+    margin: 0px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.957);
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* some style to main cards2 , add background image , position , width , ...  */
+.main-cards2 {
+    position: relative;
+    background-image: url(imges/imge3-footer-main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    width: 100%;
+    height: 330px;
+    overflow: visible;
+    max-width: 1320px;
+}
+/* add some style to nasa events , width , font size , position  */
+.nasa-event {
+    background: #39719e;
+    position: relative;
+    font-size: 14px;
+    height: 315px;
+    padding: 0 7.5px 15px;
+    width: 330px;
+}
+/* add some style to h2 of nasa events  */
+.nasa-event h2{
+    color: white;
+    margin: 0px;
+    padding: 7px;
+    border-bottom: 1px solid white;
+}
+/* title class a styles */
+.title a  {
+    color: white;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+}
+/* title class a styles hover */
+.title a:hover {
+    color: white;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 10px;
+}
+/* event-bottom class styles */
+.event-bottom{
+    margin-top: 100px;
+    padding: 7px;
+    border-top: 1px solid white;
+}
+/* event-bottom1 class styles */
+.event-bottom1 {
+    color: white;
+    text-decoration: none;
+    float: left;
+}
+/* event-bottom2 class styles */
+.event-bottom2 {
+    color: white;
+    text-decoration: none;
+    float: right;
+}
+/* event-bottom1 class styles hover */
+.event-bottom1:hover{
+    text-decoration: underline;
+}
+/* event-bottom2 class styles hover */ 
+.event-bottom2:hover{
+    text-decoration: underline;
+}
+/* some style to main cards3 , add background image , position , width , ...  */
+.main-cards3 {
+    position: relative;
+    background-image: url(imges/stsci-01gwqc3f2ezceyfbws69bvdwpm.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    box-sizing: border-box;
+    height: 300px;
+    overflow: visible;
+}
+/* add a margin top tp card 3  */
+.cards-3 {
+    margin-top: 180px;
+}
+/* add some style to span card 3 */
+.cards-3 span {
+    background-color: #39719ebd;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 20px;
+}
+/* add some style to h2 card 3  */
+.cards-3 h2 {
+    margin: 0px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.774);
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* when mouse on it we can see some changes in style span  */
+.cards-3 span:hover {
+    background-color: #39719eee;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 20px;
+}
+/* when mouse on it we can see some changes in style h2  */
+.cards-3 h2:hover {
+    margin: 0px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.957);
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* some style to main cards4 , add background image , position , width , ...  */
+.main-cards4 {
+    position: relative;
+    background-image: url(imges/hdtn_poster_graphic.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    box-sizing: border-box;
+    height: 300px;
+    overflow: visible;
+    max-width: 1320px;
+}
+/* add a margin top tp card 4  */
+.cards-4{
+    margin-top: 257px;
+}
+/* add some style to h2 card 4  */
+.cards-4 h2 {
+    margin: 0px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.774);
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+/* when mouse on it we can see some changes in style h2  */
+.cards-4 h2:hover {
+    margin: 0px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.957);
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* some style to main cards5 , add background image , position , width , ...  */
+.main-cards5 {
+    position: relative;
+    background-image: url(imges/img2-main-main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    box-sizing: border-box;
+    height: 300px;
+    overflow: visible;
+    max-width: 1320px;
+}
+/* some style to main cards6 , add background image , position , width , ...  */
+.main-cards6 {
+    position: relative;
+    background-image: url(imges/imge3-main-main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    box-sizing: border-box;
+    height: 300px;
+    overflow: visible;
+    max-width: 1320px;
+}
+/* some style to main cards7 , add background image , position , width , ...  */
+.main-cards7 {
+    position: relative;
+    background-image: url(imges/imge2-footer-main.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    box-sizing: border-box;
+    height: 300px;
+    overflow: visible;
+    max-width: 1320px;
+}
+/* some style to main cards8 , add background image , position , width , ...  */
+.main-cards8 {
+    position: relative;
+    background-image: url(imges/artemis_ii_graphics.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    box-sizing: border-box;
+    height: 300px;
+    overflow: visible;
+    max-width: 1320px;
+}
+/* some style to main cards9 , add background image , position , width , ...  */
+.main-cards9 {
+    position: relative;
+    background-image: url(imges/state-of-nasa-2023.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    box-sizing: border-box;
+    height: 300px;
+    overflow: visible;
+    max-width: 1320px;
+}
+/* some style to main cards10 , add background image , position , width , ...  */
+.main-cards10 {
+    position: relative;
+    background-image: url(imges/52791009135_8799cc02f7_o.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    box-sizing: border-box;
+    height: 300px;
+    overflow: visible;
+    max-width: 1320px;
+}
+/* some style to more stories btn , text align , ..  */
+#more-stories-btn {
+    background-color: #15418c;
+    text-align: center;
+}
+/* when mouse on it we can see some changes */
+#more-stories-btn:hover {
+    background-color: #5879b1;
+    text-align: center;
+}
+/* some styles to a of more stories */
+#more-stories-btn a {
+    color: white;
+    display: block;
+    padding: 10px 0px;
+    font-size: 20px;
+    text-decoration: none;
+}
+/* main (CREATOR MAHSA) [END] */
+
+/* code footer */
+footer{
+    padding: 30px;
+    position: relative;
+}
+ 
+/* code of footer info */
+#footer-info{
+    margin-top: -15px;
+}
+
+#footer-info img{
+    float: left;
+    width: 80px;
+}
+
+#footer-info span{
+    font-weight: 600;
+    font-size: 0.85em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/* end code footer info */
+/* code footer links */
+#footer-links{
+    float: right;
+    margin: 30px 0px;
+}
+
+#footer-links a{
+    color: #5d7fb9;
+    display: inline-block;
+    margin: 14px;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 13px;
+    font-weight: bold;
+}
+/* end footer links */
+/* end code footer */
