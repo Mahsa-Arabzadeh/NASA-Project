@@ -1,4 +1,4 @@
-#### NASA-Project
+# NASA-Project
 Team Members:
 - Mahsa Arabzadeh
 - MohammadReza Rezaiy
